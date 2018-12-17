@@ -2,8 +2,8 @@ import React from "react";
 
 const styles = {
   navbar: {
-    backgroundColor: "yellow",
-    color: "skyblue",
+    backgroundColor: "gold",
+    color: "blue",
     height: "70px",
     fontSize: "24px"
   }

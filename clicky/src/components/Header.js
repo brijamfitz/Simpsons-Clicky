@@ -4,17 +4,21 @@ const styles = {
   header: {
     height: "250px",
     textAlign: "center",
-    backgroundColor: "skyblue",
-    color: "yellow"
+    backgroundColor: "blue",
+    color: "gold"
   },
   h: {
     paddingTop: "70px"
+  },
+  img: {
+      width: "250px",
+      paddingTop: "20px"
   }
 };
 
 const Header = () => (
   <div style={styles.header}>
-    <h2 style={styles.h}>Simpsons Clicky!</h2>
+    <img alt="simpsons logo" src="./images/simpsons-logo.png" style={styles.img} />
     <h3>
       Click on a character to earn points &ndash; but don't click on any more
       than once!

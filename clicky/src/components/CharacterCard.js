@@ -6,7 +6,8 @@ const styles = {
     width: "25%"
   },
   card: {
-    textAlign: "center"
+    textAlign: "center",
+    paddingTop: "20px"
   }
 };
 

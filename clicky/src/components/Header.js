@@ -2,12 +2,10 @@ import React from "react";
 
 const styles = {
   header: {
-    height: "250px",
+    height: "320px",
     textAlign: "center",
     backgroundColor: "blue",
-    color: "gold"
-  },
-  h: {
+    color: "gold",
     paddingTop: "70px"
   },
   img: {

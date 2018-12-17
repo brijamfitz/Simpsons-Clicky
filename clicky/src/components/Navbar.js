@@ -11,7 +11,7 @@ const styles = {
 
 const Navbar = () => (
   <div>
-    <nav className="navbar" style={styles.navbar}>
+    <nav className="navbar fixed-top" style={styles.navbar}>
       <ul class="nav navbar-nav navbar-left">
         <li>Simpsons Clicky!</li>
       </ul>

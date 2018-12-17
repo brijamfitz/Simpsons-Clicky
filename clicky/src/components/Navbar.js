@@ -15,9 +15,6 @@ const Navbar = () => (
       <ul class="nav navbar-nav navbar-left">
         <li>Simpsons Clicky!</li>
       </ul>
-      <ul class="nav navbar-nav navbar-center">
-        <li>Click an image to begin!</li>
-      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>Score: 0 | Top Score: 0</li>
       </ul>

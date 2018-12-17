@@ -58,5 +58,25 @@
     "id": 12,
     "name": "Ralph",
     "image": "./images/ralph.jpeg"
+  },
+  {
+    "id": 13,
+    "name": "Apu",
+    "image": "./images/apu.png"
+  },
+  {
+    "id": 14,
+    "name": "Grandpa",
+    "image": "./images/grandpa.png"
+  },
+  {
+    "id": 15,
+    "name": "Moe",
+    "image": "./images/moe.jpeg"
+  },
+  {
+    "id": 16,
+    "name": "Skinner",
+    "image": "./images/skinner.jpeg"
   }
 ]

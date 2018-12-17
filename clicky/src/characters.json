@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Barney",
+    "image": "./images/barney.jpeg"
+  },
+  {
+    "id": 2,
+    "name": "Bart",
+    "image": "./images/bart.png"
+  },
+  {
+    "id": 3,
+    "name": "Comic Book Guy",
+    "image": "./images/comic-book-guy.jpeg"
+  },
+  {
+    "id": 4,
+    "name": "Hans Moleman",
+    "image": "./images/hans-moleman.jpeg"
+  },
+  {
+    "id": 5,
+    "name": "Homer",
+    "image": "./images/homer.png"
+  },
+  {
+    "id": 6,
+    "name": "Krusty",
+    "image": "./images/krusty.png"
+  },
+  {
+    "id": 7,
+    "name": "Lisa",
+    "image": "./images/lisa.png"
+  },
+  {
+    "id": 8,
+    "name": "Marge",
+    "image": "./images/marge.png"
+  },
+  {
+    "id": 9,
+    "name": "Milhouse",
+    "image": "./images/milhouse.png"
+  },
+  {
+    "id": 10,
+    "name": "Willie",
+    "image": "./images/willie.jpeg"
+  },
+  {
+    "id": 11,
+    "name": "Maggie",
+    "image": "./images/maggie.jpeg"
+  },
+  {
+    "id": 12,
+    "name": "Ralph",
+    "image": "./images/ralph.jpeg"
+  }
+]

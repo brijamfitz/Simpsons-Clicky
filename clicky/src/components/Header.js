@@ -18,7 +18,7 @@ const Header = () => (
   <div style={styles.header}>
     <img alt="simpsons logo" src="./images/simpsons-logo.png" style={styles.img} />
     <h3>
-      Click on a character to earn points &ndash; but don't click on any more
+      Click on a character to earn points &ndash; but don't click anybody more
       than once!
     </h3>
   </div>

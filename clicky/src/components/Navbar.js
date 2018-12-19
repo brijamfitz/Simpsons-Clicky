@@ -6,17 +6,27 @@ const styles = {
     color: "blue",
     height: "70px",
     fontSize: "24px"
+  },
+  container: {
+    float: "left",
+    width: "25%"
+  },
+  card: {
+    textAlign: "center",
+    paddingTop: "20px"
   }
 };
 
-const Navbar = (props) => (
+const Navbar = props => (
   <div>
     <nav className="navbar fixed-top" style={styles.navbar}>
       <ul class="nav navbar-nav navbar-left">
         <li>Simpsons Clicky!</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li>Score: {props.clickCount} | Top Score: {props.totalScore}</li>
+        <li>
+          Score: {props.clickCount} | Top Score: {props.totalScore}
+        </li>
       </ul>
     </nav>
   </div>

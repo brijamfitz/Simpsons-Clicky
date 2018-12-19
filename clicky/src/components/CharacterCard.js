@@ -1,24 +1,5 @@
 import React from "react";
-import Navbar from "./Navbar";
-// console.log(characters);
-
-// Need to import React Component
-// Need to extend class CharacterCard to Component
-// Need state
-// Need componentDidMount() function
-// Need event handlers
-// Click even that does these things:
-// 1. Increases clickCount by 1
-// 2. Shuffles all charactercards and repaints the DOM
-// 3. Increases totalScore count by 1
-// 4. Remembers which charactercard has been clicked
-// Will need to push the clicked image (or it's ID/key) to an array so that I can loop over any to see if the user clicked any of those previously
-// 5. If a card is clicked again, game resets and clickCount goes to 0
-// 6. totalScore stays the same, and only ever changes if the clickCount ever goes greater than it
-// Need render() function to paint the DOM with the correct elements
-
-let clickCount = 0;
-let totalScore = 0;
+// import Navbar from "./Navbar";
 
 const styles = {
   container: {
@@ -28,6 +9,12 @@ const styles = {
   card: {
     textAlign: "center",
     paddingTop: "20px"
+  },
+  navbar: {
+    backgroundColor: "gold",
+    color: "blue",
+    height: "70px",
+    fontSize: "24px"
   }
 };
 
@@ -44,21 +31,28 @@ function shuffleArray(array) {
 
 class CharacterCard extends React.Component {
   state = {
-    clickCount: 0
+    count: 0
   };
 
-  // handleIncrement increases this.state.count by 1
   handleIncrement = () => {
-    // We always use the setState method to update a component's state
-    this.setState({ clickCount: this.state.count + 1 });
+    this.setState({ count: this.state.count + 1 });
   };
 
   render() {
     const shuffledCharacters = shuffleArray(this.props.characters);
-    console.log(shuffledCharacters);
+
     return (
       <div>
-        <Navbar clickCount={clickCount} totalScore={totalScore} />
+        <nav className="navbar fixed-top" style={styles.navbar}>
+          <ul class="nav navbar-nav navbar-left">
+            <li>Simpsons Clicky!</li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              Score: {this.state.count} | High Score: {this.state.count}
+            </li>
+          </ul>
+        </nav>
 
         {shuffledCharacters.map(character => (
           <div className="card" style={styles.container}>
@@ -77,8 +71,5 @@ class CharacterCard extends React.Component {
     );
   }
 }
-// CharacterCard.propTypes = {
-//   characters: React.PropTypes.array
-// };
 
 export default CharacterCard;

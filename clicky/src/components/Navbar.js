@@ -25,7 +25,7 @@ const Navbar = props => (
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
-          Score: {props.clickCount} | Top Score: {props.totalScore}
+          Score: {props.clickCount} | High Score: {props.totalScore}
         </li>
       </ul>
     </nav>

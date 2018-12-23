@@ -31,11 +31,15 @@ function shuffleArray(array) {
 
 class CharacterCard extends React.Component {
   state = {
-    count: 0
+    clickCount: 0,
+    highScore: 0
   };
 
   handleIncrement = () => {
-    this.setState({ count: this.state.count + 1 });
+    this.setState({
+      clickCount: this.state.clickCount + 1,
+      highScore: this.state.highScore + 1
+    });
   };
 
   render() {
@@ -49,7 +53,7 @@ class CharacterCard extends React.Component {
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <li>
-              Score: {this.state.count} | High Score: {this.state.count}
+              Score: {this.state.clickCount} | High Score: {this.state.highScore}              
             </li>
           </ul>
         </nav>

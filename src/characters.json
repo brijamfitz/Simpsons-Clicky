@@ -2,81 +2,97 @@
   {
     "id": 1,
     "name": "Barney",
-    "image": "./images/barney.jpeg"
+    "image": "./images/barney.jpeg",
+    "clicked": false
   },
   {
     "id": 2,
     "name": "Bart",
-    "image": "./images/bart.png"
+    "image": "./images/bart.png",
+    "clicked": false
   },
   {
     "id": 3,
     "name": "Comic Book Guy",
-    "image": "./images/comic-book-guy.jpeg"
+    "image": "./images/comic-book-guy.jpeg",
+    "clicked": false
   },
   {
     "id": 4,
     "name": "Hans Moleman",
-    "image": "./images/hans-moleman.jpeg"
+    "image": "./images/hans-moleman.jpeg",
+    "clicked": false
   },
   {
     "id": 5,
     "name": "Homer",
-    "image": "./images/homer.png"
+    "image": "./images/homer.png",
+    "clicked": false
   },
   {
     "id": 6,
     "name": "Krusty",
-    "image": "./images/krusty.png"
+    "image": "./images/krusty.png",
+    "clicked": false
   },
   {
     "id": 7,
     "name": "Lisa",
-    "image": "./images/lisa.png"
+    "image": "./images/lisa.png",
+    "clicked": false
   },
   {
     "id": 8,
     "name": "Marge",
-    "image": "./images/marge.png"
+    "image": "./images/marge.png",
+    "clicked": false
   },
   {
     "id": 9,
     "name": "Milhouse",
-    "image": "./images/milhouse.png"
+    "image": "./images/milhouse.png",
+    "clicked": false
   },
   {
     "id": 10,
     "name": "Willie",
-    "image": "./images/willie.jpeg"
+    "image": "./images/willie.jpeg",
+    "clicked": false
   },
   {
     "id": 11,
     "name": "Maggie",
-    "image": "./images/maggie.jpeg"
+    "image": "./images/maggie.jpeg",
+    "clicked": false
   },
   {
     "id": 12,
     "name": "Ralph",
-    "image": "./images/ralph.jpeg"
+    "image": "./images/ralph.jpeg",
+    "clicked": false
   },
   {
     "id": 13,
     "name": "Apu",
-    "image": "./images/apu.png"
+    "image": "./images/apu.png",
+    "clicked": false
   },
   {
     "id": 14,
     "name": "Grandpa",
-    "image": "./images/grandpa.png"
+    "image": "./images/grandpa.png",
+    "clicked": false
   },
   {
     "id": 15,
     "name": "Moe",
-    "image": "./images/moe.jpeg"
+    "image": "./images/moe.jpeg",
+    "clicked": false
   },
   {
     "id": 16,
     "name": "Principal Skinner",
-    "image": "./images/skinner.jpeg"
+    "image": "./images/skinner.jpeg",
+    "clicked": false
   }
 ]

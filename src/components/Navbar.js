@@ -20,12 +20,12 @@ const styles = {
 const Navbar = props => (
   <div>
     <nav className="navbar fixed-top" style={styles.navbar}>
-      <ul class="nav navbar-nav navbar-left">
+      <ul className="nav navbar-nav navbar-left">
         <li>Simpsons Clicky!</li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
+      <ul className="nav navbar-nav navbar-right">
         <li>
-          Score: {props.clickCount} | High Score: {props.totalScore}
+          Score: {props.score} | High Score: {props.highScore}
         </li>
       </ul>
     </nav>

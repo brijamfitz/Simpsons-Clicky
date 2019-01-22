@@ -19,10 +19,6 @@ const styles = {
   }
 };
 
-let pickedArray = [];
-let score = 0;
-let highScore = 0;
-
 const shuffleArray = array => {
   let i = array.length - 1;
   for (; i > 0; i--) {
@@ -40,37 +36,12 @@ class CharacterCard extends Component {
     highScore: 0
   };
 
-  // handleIncrement = () => {
-  //   this.setState({
-  //     score: this.state.score + 1,
-  //     highScore: this.state.highScore + 1
-  //   });
-  // };
-
-  scoreCheck = (name) => {
-    console.log(this.props.characters);
-    for (let i = 0; i < pickedArray.length; i++){
-      if (pickedArray[i] === name) {
-        console.log(pickedArray);
-        console.log("You already clicked them! Try again!")
-        pickedArray = [];
-        score = 0;
-        this.setState({
-          score: 0,
-        })
-        return;
-      }
-    }
-    pickedArray.push(name);
-    score++;
-    if (score > highScore){
-      highScore++;
-      this.setState({highScore: highScore})
-    }
+  handleIncrement = () => {
     this.setState({
-      score: score
-    })
-  }
+      score: this.state.score + 1,
+      highScore: this.state.highScore + 1
+    });
+  };
 
   render() {
     const shuffledCharacters = shuffleArray(this.props.characters);

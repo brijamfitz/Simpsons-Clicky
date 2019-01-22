@@ -3,9 +3,9 @@ import React from "react";
 const Footer = () => (
   <div>
     <nav className="navbar bottom navbar-light bg-light">
-      <a className="navbar-brand" href="/">
+      <h5>
         Simpsons Clicky &mdash; Powered by React
-      </a>
+      </h5>
     </nav>
   </div>
 );

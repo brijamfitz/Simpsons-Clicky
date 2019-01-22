@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Wrapper from "./components/Wrapper";
@@ -10,7 +10,7 @@ const clicked = [];
 const score = 0;
 const highScore = 0;
 
-class App extends React.Component {
+class App extends Component {
   state = {
     characters,
     clicked,
@@ -32,29 +32,29 @@ class App extends React.Component {
     this.setState({ characters: array });
   };
 
-  onClick = id => {
-    console.log(id);
+  onClick = name => {
+    console.log(name);
     let localScore = this.state.score;
     let localClicked = this.state.clicked;
     let counter = 0;
     let localhighScore = this.state.highScore;
     this.state.clicked.forEach(function(clickId) {
-      if (clickId === id) {
+      if (clickId === name) {
         counter++;
       }
     });
     if (counter > 0) {
       localScore = 0;
       localClicked = [];
-      alert("Sorry, you already clicked them! Try again!");
+      alert("Sorry, you already clicked on them! Try again!");
     } else {
       localScore += 1;
-      localClicked.push(id);
+      localClicked.push(name);
       if (localScore > localhighScore) {
         localhighScore = localScore;
       }
       if (localScore === 16) {
-        alert("Congratulations! You clicked all the characters!");
+        alert("Congratulations! You are a Simpsons wizard!");
         localScore = 0;
         localClicked = [];
       }
@@ -70,7 +70,6 @@ class App extends React.Component {
       <Wrapper>
         <Navbar score={this.state.score} highScore={this.state.highScore} />
         <Header />
-
         {this.state.characters.map((character, index) => (
           <Card
             key={index}

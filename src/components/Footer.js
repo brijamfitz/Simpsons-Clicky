@@ -1,11 +1,17 @@
 import React from "react";
 
+const styles = {
+  p: {
+    marginBottom: "0px"
+  }
+};
+
 const Footer = () => (
   <div>
     <nav className="navbar bottom navbar-light bg-light">
-      <h5>
+      <p style={styles.p}>
         Simpsons Clicky &mdash; Powered by React
-      </h5>
+      </p>
     </nav>
   </div>
 );

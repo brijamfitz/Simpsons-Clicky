@@ -33,7 +33,6 @@ class App extends Component {
   };
 
   onClick = name => {
-    console.log(name);
     let localScore = this.state.score;
     let localClicked = this.state.clicked;
     let counter = 0;
@@ -46,7 +45,7 @@ class App extends Component {
     if (counter > 0) {
       localScore = 0;
       localClicked = [];
-      alert("Sorry, you already clicked on them! Try again!");
+      alert("Sorry, you already clicked on that character! Try again!");
     } else {
       localScore += 1;
       localClicked.push(name);

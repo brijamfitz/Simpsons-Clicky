@@ -21,7 +21,7 @@ const Navbar = props => (
   <div>
     <nav className="navbar fixed-top" style={styles.navbar}>
       <ul className="nav navbar-nav navbar-left">
-        <a href="/"><li>Simpsons Clicky!</li></a>
+        <li>Simpsons Clicky!</li>
       </ul>
       <ul className="nav navbar-nav navbar-right">
         <li>
